@@ -1,0 +1,438 @@
+/*inicio da configuração da capa */
+
+.navigation{
+
+    background-color:#035e7b;
+    color: #eff1c5;
+    height: 50px;
+}
+
+
+.navigation ul{
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    height: 50px;
+
+    animation: navegacao;
+    animation-duration: 4s;
+
+
+}
+.navigation li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 18px;
+    font-size: 100;
+  
+
+}
+
+html, body{
+    
+    margin: 0px;
+    padding: 0px;
+    font-size: 58;
+
+
+}
+body{
+    /*background-color: #002e2c;*/
+    background-color: black;
+    font-family:'Montserrat', sans-serif;
+
+}
+
+.capa{
+    color: #eff1c5;
+}
+
+.capa span{
+    color: #035e7b;
+    display: block;
+
+
+}
+
+.capa div{
+    display: inline-block;
+    height: 650;
+    
+}
+
+.profile-pic{
+    /*background-color: #002e2c;*/
+    background-color: black;
+    width:40%;
+    text-align: center;
+    margin-top: 100px;
+
+    animation: profile-capa;
+    animation-duration: 5s;
+
+}
+
+.profile-pic img {
+    width: 350px;
+    border-radius:350px ;
+
+
+}
+.profile-title{
+
+    background-color:002e2c;
+    vertical-align: top;
+    width:59%;
+    margin-top: 200px;
+
+    animation: titulo-capa;
+    animation-duration: 2s;
+
+}
+.profile-title h1 {
+
+    font-size: 58px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 54px;
+
+}
+.profile-title h2{
+
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: -30px;
+}
+
+/*fim da configuração da capa */
+
+/*inicio da configuração do curriculo*/
+
+.main{
+    padding-top: 80px;
+    padding-right: 180px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+
+    animation: conteudo;
+    animation-duration: 5s;
+
+
+}
+
+.main h1{
+
+    color: #eff1c5;
+    font-weight: normal;
+}
+
+.main h2{
+
+    color:#eff1c5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+
+.main h3{
+    color: tomato;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: justify;
+
+}
+
+
+.caminho{
+    list-style: none;
+    padding-left: 0;
+    color:#a2a77f ;    
+}
+
+.caminho li {
+    display: inline-block;
+}
+
+
+.caminho a{
+    color: tomato;
+
+}
+.cv-pic{
+
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*fim da configuração do curriculo*/
+
+
+/*inicio contato*/
+
+.social-img{
+    width:50px ;
+    margin-right: 10px;
+
+}
+
+
+/*fim contato*/
+
+
+/*inicio portifolio*/
+.miniatura {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain; /*estica a imagem para caber no tamanho definido*/
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none; /*tira o traço embaixo do link*/
+
+}
+
+.black-box{
+    width: 100%;
+    height: 100%;
+    background-color: #eff1c5;    
+    opacity: 0; /* 1 signigica 100% - 0 totalmente  transparente 0.8 80 %*/
+    padding-top:100% ;
+    transition: 1s;
+}
+
+.black-box:hover{
+    opacity: 0.5;
+    transition: 1s;
+
+}
+.black-box-text{
+    text-align:center ;
+
+}
+
+.black-box-text h1{
+    font-size: 16px;
+    color: #035e7b;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}
+
+.black-box-text h2{
+    text-transform: none;
+    font-weight: normal;
+    color: #035e7b;
+    margin-top: 0;
+
+    
+}
+
+
+/*fim portifolio*/
+
+.foto-trabalho{
+
+    width: 100%;
+
+    height: 900px;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+
+    color: #eff1c5;
+    
+    
+}
+.navigation a:hover{
+    color: #65acc4;
+}
+
+/*tratar a janela para aparecer o botão 3 line no celular
+1º constroi o objeto no html e define uma calase*/
+
+.navigation li.threeline-icon{
+    display: none;    
+}
+
+.navigation li.threeline-icon: houver{
+    color: tomato;
+    cursor: pointer;
+}
+
+.back-link {
+    color: tomato;
+    text-decoration: none;
+
+
+}
+
+/*animação*/
+
+@keyframes profile-capa{
+    0% { opacity: 0; transform: translate(0px,20px);}
+    100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+@keyframes titulo-capa{
+    0% { opacity: 0; transform: translate(0px,-20px);}
+    100% {opacity: 1; transform: translate(0px,0px);}
+}
+
+@keyframes navegacao{
+    0% { opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+@keyframes conteudo{
+    0% { opacity: 0; transform: translate(-20px,0px);} /*Fazer a animação andar da esquerda para a direita*/
+    100% {opacity: 1; transform: translate(0px,0px);}
+}
+
+/*propriedade usadas somentes nas telas de celular  usar a função @media()*/
+
+@media(max-width: 1000px){/*quando a tela menor que 1000px executa essa parte do codigo*/
+
+        .navigation li {
+            display: none;/*não mostrar os menus */
+        }
+
+        .navigation li.threeline-icon{ /*mostrando o botão 3 line*/
+            display: inline-block;
+        }
+
+        .profile-pic {
+            width: 100%; /*para celular tem que ocupar a janela inteira*/
+            background-color:black;
+            margin-top:0;
+
+        }
+        .profile-pic img {
+            margin-top:0;
+            max-width: 80%;
+
+        }
+
+        .profile-title{
+            background-color:black;
+            width: 100%; /*para celular tem que ocupar a janela inteira*/
+            margin-top:0;
+            text-align: center;
+        }
+
+        .profile-title h1{
+            margin-top:30;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .profile-title h2{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+
+        .capa div{
+            display: block;    
+            height: auto;        
+        }
+
+
+        .main{
+            padding-top: 10px;
+            padding-right: 5%;
+            padding-bottom: 40px;
+            padding-left: 5%;       /*a % é pq está prevendo trabalhar com tablet e celular*/
+
+    
+        }
+
+        .main a{
+            /*resolvendo problemas com textos longos sem espaços*/
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        .main p{
+            text-align: left;
+            line-height: 30px;
+
+        }
+        .caminho li {
+            font-size: 12px;
+        }
+
+
+        .cv-pic{
+            float: none;
+            max-width: 100%;            
+            margin-right: 0px;
+        }
+        
+
+        .miniatura{
+            max-width: 100%; /*não invade a tela quando tela for menor a imagem se auto ajusta*/
+            background-size: auto 100%; /*larguara e altura*/
+
+        }
+
+        .black-box{
+            opacity: 0.8;
+
+        }
+
+        /*trabalhando com o menu*/
+
+        .menujs{
+            /*background-color: chartreuse; */
+      
+            height: auto;
+
+        }
+        
+        .menujs ul{
+            height: auto;
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+
+
+        }
+
+        .menujs li{
+            display: block;
+            border-bottom: solid grey 1px;
+
+
+        
+        }
+        .menujs a {
+            text-decoration: none; /*tira o traço embaixo do link*/
+
+        }
+
+
+}
